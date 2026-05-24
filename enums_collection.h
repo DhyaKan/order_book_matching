@@ -10,3 +10,9 @@ enum class Event {
     MODIFY,
     CANCEL
 };
+
+enum class Side {
+    NONE,
+    BUY,
+    SELL
+};

@@ -27,10 +27,11 @@ int main() {
     }
     OrderBook orderBook{};
     string line;
+    int result = 0;
     while (getline(inputFile, line)) {
         if(line.empty()) continue;
         vector token = parseLine(line);
         orderBook.handleOrder(token);
     }
-    return 0;
+    return result;
 }
